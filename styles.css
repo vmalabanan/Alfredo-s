@@ -4,32 +4,56 @@
 }
 
 body {
-  /* background-image: url("https://lh3.googleusercontent.com/pTG8Is7hCs5rKojb6JdCGZILiAi3TRMGKXE3zjlswNNZJmCmSEQINuKjxLwtr8umnj4bqk4aFIL9r68f628Jr_PytXTd32MEkjhH2jLAI5hWsvGJH_GMCxW5PFDPDmAXLiJ364-S=w2400");
-  background-repeat: no-repeat; */
   background-color: #ffdd55;
+  font-size: 19px;
+  font-weight: 500;
+  color: #1a1a1a;
+  font-family: "Roboto Mono", monospace;
+}
+
+/* Not sure if this is correct. Fix this later. */
+.container {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .logo {
   float: left;
+  width: 16%;
 }
 
 .asterisk {
   font-size: 53px;
   color: #ff3e56;
-  line-height: 0.4;
+  line-height: 0.3;
   font-family: "Pacifico", cursive;
   padding-top: 40px;
+  display: inline-block;
+  /* display: inline; */
 }
 
 .main-header {
   padding: 30px 60px;
-  margin-bottom: 250px;
+  margin-bottom: 25px;
+  /* display: inline-block; */
+  /* display: inline; */
 }
 
 nav {
   font-size: 29px;
-  color: #1a1a1a;
   font-family: "Gloria Hallelujah", cursive;
+  display: inline-block;
+  /* display: inline; */
+}
+
+nav a:link {
+  /* display: inline-block; */
+  margin: 50px;
+}
+
+nav a:link:first-child {
+  /* display: inline-block; */
+  margin-left: 550px;
 }
 
 a:link,
@@ -57,8 +81,12 @@ h2 {
 }
 
 .intro {
+  background-image: url("https://lh3.googleusercontent.com/pTG8Is7hCs5rKojb6JdCGZILiAi3TRMGKXE3zjlswNNZJmCmSEQINuKjxLwtr8umnj4bqk4aFIL9r68f628Jr_PytXTd32MEkjhH2jLAI5hWsvGJH_GMCxW5PFDPDmAXLiJ364-S=w2400");
+  background-repeat: no-repeat;
+  background-size: 100%;
   text-align: center;
-  margin-bottom: 295px;
+  padding-top: 300px;
+  padding-bottom: 340px;
 }
 
 .intro-last-line {
@@ -75,13 +103,21 @@ button {
   font-weight: 600;
   color: white;
   font-family: "Montserrat", sans-serif;
+  display: block;
+  margin: 0 auto;
+}
+
+.unofficial .asterisk {
+  line-height: 0;
+  letter-spacing: 0;
+  padding-top: 25px;
 }
 
 .unofficial-blurb {
-  font-size: 19px;
-  color: #1a1a1a;
   letter-spacing: 3px;
+  /* line-height: 0.6; */
   font-family: "Pacifico", cursive;
+  display: inline-block;
 }
 
 .menu {
@@ -92,7 +128,6 @@ button {
 h3 {
   font-size: 43px;
   font-weight: 500;
-  color: #1a1a1a;
   line-height: 1.1;
   font-family: "Gloria Hallelujah", cursive;
   text-align: center;
@@ -102,27 +137,14 @@ h3 {
 
 .menu dt {
   font-size: 27px;
-  color: #1a1a1a;
   line-height: 1.6;
   font-family: "Gloria Hallelujah", cursive;
   margin-left: 500px;
 }
 
-.food-images,
-.menu dd {
-  font-size: 19px;
-  color: #1a1a1a;
-  font-weight: 500;
-  font-family: "Roboto Mono", monospace;
-}
-
 .menu dd {
   margin-left: 500px;
 }
-
-/* .food-images-container {
-  background-color: #fbbf3a;
-} */
 
 .food-images {
   padding-top: 30px;
@@ -131,9 +153,12 @@ h3 {
   background-color: #fbbf3a;
 }
 
+.food-images img {
+  width: 30%;
+}
+
 h4 {
   font-size: 32px;
-  color: #1a1a1a;
   font-weight: 500;
   letter-spacing: 0.8px;
   line-height: 1.6;
@@ -145,7 +170,6 @@ footer {
   font-size: 15px;
   color: white;
   font-weight: 300;
-  font-family: "Roboto Mono", monospace;
   padding: 40px 80px;
 }
 
