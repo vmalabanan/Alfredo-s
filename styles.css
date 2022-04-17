@@ -9,42 +9,146 @@ body {
   background-color: #ffdd55;
 }
 
-/* .main-header {
-
+.logo {
+  float: left;
 }
 
-.intro {
+.asterisk {
+  font-size: 53px;
+  color: #ff3e56;
+  line-height: 0.4;
+  font-family: "Pacifico", cursive;
+  padding-top: 40px;
+}
 
-} */
+.main-header {
+  padding: 30px 60px;
+  margin-bottom: 250px;
+}
 
-h2,
-h3,
 nav {
+  font-size: 29px;
+  color: #1a1a1a;
   font-family: "Gloria Hallelujah", cursive;
 }
 
-h4 {
-  font-family: "Pacifico", cursive;
+a:link,
+a:visited {
+  color: #1a1a1a;
+  text-decoration: none;
 }
 
-.menu,
-.food-images,
-footer {
-  font-family: "Roboto Mono", monospace;
+a:link:first-child,
+a:visited:first-child {
+  color: #ff3e56;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff3e56;
+}
+
+h2 {
+  font-size: 43px;
+  font-weight: 500;
+  color: #ff3e56;
+  line-height: 1.17;
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 295px;
+}
+
+.intro-last-line {
+  margin-bottom: 40px;
+}
+
+button {
+  background-color: #ff3e56;
+  border: none;
+  padding: 20px 24px;
+  border-radius: 30px;
+  display: inline-block;
+  font-size: 17.3px;
+  font-weight: 600;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.unofficial-blurb {
+  font-size: 19px;
+  color: #1a1a1a;
+  letter-spacing: 3px;
+  font-family: "Pacifico", cursive;
 }
 
 .menu {
   background-color: white;
+  padding: 50px 0;
 }
 
-.food-images {
+h3 {
+  font-size: 43px;
+  font-weight: 500;
+  color: #1a1a1a;
+  line-height: 1.1;
+  font-family: "Gloria Hallelujah", cursive;
+  text-align: center;
+  /* padding-top: 40px; */
+  margin-bottom: 20px;
+}
+
+.menu dt {
+  font-size: 27px;
+  color: #1a1a1a;
+  line-height: 1.6;
+  font-family: "Gloria Hallelujah", cursive;
+  margin-left: 500px;
+}
+
+.food-images,
+.menu dd {
+  font-size: 19px;
+  color: #1a1a1a;
+  font-weight: 500;
+  font-family: "Roboto Mono", monospace;
+}
+
+.menu dd {
+  margin-left: 500px;
+}
+
+/* .food-images-container {
   background-color: #fbbf3a;
+} */
+
+.food-images {
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-bottom: 90px;
+  background-color: #fbbf3a;
+}
+
+h4 {
+  font-size: 32px;
+  color: #1a1a1a;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  line-height: 1.6;
+  font-family: "Pacifico", cursive;
 }
 
 footer {
   background-color: #ff3e56;
+  font-size: 15px;
+  color: white;
+  font-weight: 300;
+  font-family: "Roboto Mono", monospace;
+  padding: 40px 80px;
 }
 
-button {
-  font-family: "Montserrat", sans-serif;
+.hours {
+  font-weight: 700;
 }
