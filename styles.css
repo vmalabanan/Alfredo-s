@@ -231,14 +231,27 @@ h4 {
 }
 
 .food-images {
-  padding-top: 30px;
-  padding-left: 100px;
-  padding-bottom: 90px;
   background-color: #fbbf3a;
+  text-align: center;
+  padding: 30px 100px;
+  padding-bottom: 90px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.row-one,
+.row-two,
+.row-three {
+  flex-basis: 400px;
 }
 
 .food-images img {
-  width: 30%;
+  width: 60%;
+}
+
+.food-images p {
+  margin-bottom: 50px;
 }
 
 h5 {
