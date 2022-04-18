@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -17,59 +21,56 @@ body {
   margin: 0 auto;
 }
 
-.logo {
-  float: left;
-  width: 16%;
+.main-header {
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 15px;
 }
 
 .asterisk {
   font-size: 53px;
   color: #ff3e56;
-  line-height: 0.3;
+  /* line-height: 0.3; */
   font-family: "Pacifico", cursive;
-  padding-top: 40px;
-  display: inline-block;
-  /* display: inline; */
-}
-
-.main-header {
-  padding: 30px 60px;
-  margin-bottom: 25px;
-  /* display: inline-block; */
-  /* display: inline; */
 }
 
 nav {
   font-size: 29px;
   font-family: "Gloria Hallelujah", cursive;
-  display: inline-block;
-  /* display: inline; */
 }
 
-nav a:link {
-  /* display: inline-block; */
-  margin: 50px;
-}
-
-nav a:link:first-child {
-  /* display: inline-block; */
-  margin-left: 550px;
-}
-
-a:link,
-a:visited {
+.nav-link:link,
+.nav-link:visited {
   color: #1a1a1a;
   text-decoration: none;
 }
 
-a:link:first-child,
-a:visited:first-child {
+.home-nav-link:link:first-child,
+.home-nav-link:visited:first-child {
   color: #ff3e56;
   text-decoration: none;
 }
 
-a:hover {
+.nav-link:hover {
   color: #ff3e56;
+}
+
+.social-links-header {
+  list-style: none;
+  margin-left: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.social-button-header {
+  background-color: #ffdd55;
+  color: #ff3e56;
+  transition-duration: 0.4s;
+}
+
+.social-button-header:hover {
+  color: #ff8050;
 }
 
 h2 {
@@ -94,17 +95,33 @@ h2 {
 }
 
 button {
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.order-button {
   background-color: #ff3e56;
   border: none;
   padding: 20px 24px;
   border-radius: 30px;
-  display: inline-block;
   font-size: 17.3px;
   font-weight: 600;
-  color: white;
+  color: #ffffff;
   font-family: "Montserrat", sans-serif;
-  display: block;
-  margin: 0 auto;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  margin-bottom: 10px;
+}
+
+.order-button:hover {
+  background-color: #ff8050;
+}
+
+.unofficial {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .unofficial .asterisk {
@@ -120,9 +137,10 @@ button {
   display: inline-block;
 }
 
-.menu {
-  background-color: white;
-  padding: 50px 0;
+#menu {
+  background-color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 h3 {
@@ -135,15 +153,81 @@ h3 {
   margin-bottom: 20px;
 }
 
-.menu dt {
-  font-size: 27px;
-  line-height: 1.6;
-  font-family: "Gloria Hallelujah", cursive;
-  margin-left: 500px;
+.menu-items {
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+  /* padding: 0 200px; */
 }
 
-.menu dd {
-  margin-left: 500px;
+.favorites,
+.breakfast,
+.drinks-and-extras {
+  flex-basis: 350px;
+}
+
+.extras {
+  margin-top: 45px;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.6;
+  font-family: "Gloria Hallelujah", cursive;
+  margin-bottom: 10px;
+}
+
+.food-item {
+  font-size: 22px;
+  line-height: 1.6;
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+.food-description {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#restaurant-info {
+  background-color: #ffffff;
+  padding: 50px 200px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 80px;
+}
+
+.location-info p {
+  margin-bottom: 5px;
+}
+
+.address-body {
+  margin-bottom: 20px;
+}
+
+.body-link:link,
+.body-link:visited {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.hours-body {
+  margin-bottom: 30px;
+}
+.hours-title-body {
+  font-weight: bold;
+}
+
+.food-partners {
+  list-style: none;
+}
+
+.food-partners li {
+  margin-bottom: 15px;
 }
 
 .food-images {
@@ -157,7 +241,7 @@ h3 {
   width: 30%;
 }
 
-h4 {
+h5 {
   font-size: 32px;
   font-weight: 500;
   letter-spacing: 0.8px;
@@ -167,12 +251,85 @@ h4 {
 
 footer {
   background-color: #ff3e56;
-  font-size: 15px;
-  color: white;
+  font-size: 13px;
+  /* color: #fbbf3a; */
+  color: #ffffff;
   font-weight: 300;
-  padding: 40px 80px;
+  text-align: center;
+  /* font-family: "Montserrat", sans-serif; */
+  padding: 30px 300px;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.takeout-blurb {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.phone {
+  margin-bottom: 20px;
+}
+
+.hours-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.social-button {
+  background-color: #ff3e56;
+  color: #fbbf3a;
+  transition-duration: 0.4s;
+}
+
+.social-button:hover {
+  color: #ffffff;
+}
+
+/* FLEXBOX */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  /* justify-content: ; */
+  gap: 10px;
+}
+
+nav {
+  margin-left: auto;
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* gap: 100px; */
+}
+
+.contact-info {
+  flex-basis: 220px;
+}
+
+.social-links {
+  list-style: none;
+  flex-basis: 220px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .hours {
-  font-weight: 700;
+  flex-basis: 220px;
+  align-self: flex-start;
 }
