@@ -85,7 +85,8 @@ h2 {
 .intro {
   background-image: url("https://lh3.googleusercontent.com/pTG8Is7hCs5rKojb6JdCGZILiAi3TRMGKXE3zjlswNNZJmCmSEQINuKjxLwtr8umnj4bqk4aFIL9r68f628Jr_PytXTd32MEkjhH2jLAI5hWsvGJH_GMCxW5PFDPDmAXLiJ364-S=w2400");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   text-align: center;
   padding-top: 300px;
   padding-bottom: 340px;
