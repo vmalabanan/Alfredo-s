@@ -15,12 +15,6 @@ body {
   font-family: "Roboto Mono", monospace;
 }
 
-/* Not sure if this is correct. Fix this later. */
-.container {
-  width: 100%;
-  margin: 0 auto;
-}
-
 .main-header {
   padding-top: 30px;
   padding-left: 60px;
