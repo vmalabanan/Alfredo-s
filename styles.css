@@ -15,6 +15,10 @@ body {
   font-family: "Roboto Mono", monospace;
 }
 
+.hero {
+  height: 100vh;
+}
+
 .main-header {
   padding-top: 30px;
   padding-left: 60px;
@@ -24,8 +28,7 @@ body {
   align-items: center;
   gap: 10px;
 }
-
-.asterisk {
+s .asterisk {
   font-size: 53px;
   color: #ff3e56;
   /* line-height: 0.3; */
