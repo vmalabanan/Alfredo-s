@@ -26,6 +26,9 @@ body {
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .asterisk {
@@ -38,6 +41,10 @@ body {
 nav {
   font-size: 29px;
   font-family: "Gloria Hallelujah", cursive;
+  margin-left: auto;
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
 }
 
 .nav-link:link,
@@ -60,7 +67,7 @@ nav {
   list-style: none;
   margin-left: 30px;
   display: flex;
-  gap: 20px;
+  gap: 15px;
 }
 
 .social-button-header {
@@ -132,9 +139,66 @@ button {
 
 .unofficial-blurb {
   letter-spacing: 3px;
-  /* line-height: 0.6; */
   font-family: "Pacifico", cursive;
-  display: inline-block;
+}
+
+#story {
+  background-color: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  padding-left: 45px;
+  padding-right: 100px;
+  display: flex;
+  align-items: center;
+  /* gap: 40px; */
+}
+
+/* .story-image-and-caption {
+  width: 50%;
+} */
+
+.boy-eating-burrito {
+  padding-left: 55px;
+  width: 80%;
+}
+
+.caption-and-arrow {
+  margin-top: -80px;
+  /* margin-left: 60px; */
+  display: flex;
+  align-items: flex-end;
+}
+
+.caption-and-arrow p {
+  letter-spacing: 3px;
+  font-family: "Pacifico", cursive;
+  /* flex-basis: 400px; */
+}
+
+.arrow {
+  padding-bottom: 15px;
+}
+.story-text {
+  margin-left: -90px;
+  flex-basis: 600px;
+  text-transform: lowercase;
+}
+
+.story-text p {
+  margin-bottom: 30px;
+}
+
+.carne-asada,
+.fries,
+.and-so {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.1;
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+.and-so {
+  text-align: end;
 }
 
 #menu {
@@ -175,6 +239,15 @@ h4 {
   font-weight: 500;
   line-height: 1.6;
   font-family: "Gloria Hallelujah", cursive;
+  margin-bottom: 10px;
+}
+
+.breakfast-all-day {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  font-family: "Gloria Hallelujah", cursive;
+  margin-top: -20px;
   margin-bottom: 10px;
 }
 
@@ -265,12 +338,13 @@ h5 {
 footer {
   background-color: #ff3e56;
   font-size: 13px;
-  /* color: #fbbf3a; */
   color: #ffffff;
   font-weight: 300;
   text-align: center;
-  /* font-family: "Montserrat", sans-serif; */
   padding: 30px 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .footer-link:link,
@@ -286,15 +360,20 @@ footer {
   margin-bottom: 15px;
 }
 
+.contact-info {
+  flex-basis: 220px;
+}
+
 .phone {
   margin-bottom: 20px;
 }
 
-.hours-title {
-  font-size: 14px;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 15px;
+.social-links {
+  list-style: none;
+  flex-basis: 220px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .social-button {
@@ -307,42 +386,14 @@ footer {
   color: #ffffff;
 }
 
-/* FLEXBOX */
-
-.main-header {
-  display: flex;
-  align-items: center;
-  /* justify-content: ; */
-  gap: 10px;
-}
-
-nav {
-  margin-left: auto;
-  display: flex;
-  gap: 60px;
-  justify-content: space-between;
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  /* gap: 100px; */
-}
-
-.contact-info {
-  flex-basis: 220px;
-}
-
-.social-links {
-  list-style: none;
-  flex-basis: 220px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
 .hours {
   flex-basis: 220px;
   align-self: flex-start;
+}
+
+.hours-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
 }
