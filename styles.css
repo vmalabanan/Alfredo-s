@@ -15,10 +15,6 @@ body {
   font-family: "Roboto Mono", monospace;
 }
 
-.hero {
-  height: 100vh;
-}
-
 .main-header {
   padding-top: 30px;
   padding-left: 60px;
