@@ -28,7 +28,8 @@ body {
   align-items: center;
   gap: 10px;
 }
-s .asterisk {
+
+.asterisk {
   font-size: 53px;
   color: #ff3e56;
   /* line-height: 0.3; */
